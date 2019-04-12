@@ -23,6 +23,7 @@ int main()
                 worst = c[j];
             }
         } 
+        
         answer[i] = worst;
         int flag = 1;
         while(flag){
