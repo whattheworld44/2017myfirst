@@ -17,7 +17,7 @@ int main()
 
     for(int i=0; i<n; i++){
         
-        int worst = 0;
+        double worst = 0;
         for(int j=i+1; j<n; j++){
             if(worst < c[j]){
                 worst = c[j];
