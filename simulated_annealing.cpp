@@ -90,7 +90,10 @@ int main()
     srand ( unsigned ( time(0) ) );
     double tem = temperature;
     while(tem > MINI){
-        random_shuffle ( pack, pack + n );
+        int sw1 = rand()%n;
+        int sw2 = rand()%n;
+        swap(pack[sw1],pack[sw2]);
+        //random_shuffle ( pack, pack + n );
         sum_worst = cost_f(p, pack, e, n);
         double delta_c = sum_worst - min_cost ;
         if(delta_c <= MINI){
